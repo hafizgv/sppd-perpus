@@ -5,3 +5,9 @@
 table, td, th{
     border: 2px solid black;
 }
+
+.downloadicon input[type="submit"],
+.editicon input[type="submit"],
+.deleteicon input[type="submit"] { 
+    display: none;
+}
