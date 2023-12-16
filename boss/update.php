@@ -28,7 +28,6 @@
                         $query = mysqli_query($conn,"SELECT * FROM lpd WHERE no_spt = '$id'");
                         
                         while($row = mysqli_fetch_array($query)){
-                            echo $id;
                             ?>
                             <form enctype="multipart/form-data" action="up.php" method="post">
                                 <div class="grid grid-cols-2 gap-3 p-2 bg-violet-500">

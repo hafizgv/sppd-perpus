@@ -40,13 +40,9 @@
                                         <td><?php echo $row['tgl_upload'];?></td>
                                         <td>
                                             <div class="flex flex-row justify-around">
-                                                <form action="#" method="post">
-                                                    <input type="hidden" name="id" value="<?php echo $row['no_spt'] ?>">
-                                                    <label class="block downloadicon bg-blue-500 p-1 rounded-md cursor-pointer">
-                                                        <input type="submit" name="download"> 
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
-                                                    </label>
-                                                </form>
+                                                <a href="download.php?path=../file/<?php echo $row['filename'] ?>" class="block downloadicon bg-blue-500 p-1 rounded-md cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
+                                                </a>
                                                 <form action="update.php" method="post">
                                                     <input type="hidden" name="id" value="<?php echo $row['no_spt'] ?>">
                                                     <label class="block editicon bg-yellow-500 p-1 rounded-md cursor-pointer">
