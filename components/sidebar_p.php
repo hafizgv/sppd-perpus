@@ -38,6 +38,7 @@
 		</ul>
 	</div>
 </div>
+<!-- JS Function Start -->
 <script>
 	function show(e){
 		let boy = document.getElementById(e);
@@ -49,3 +50,4 @@
 		}
 	}
 </script>
+<!-- JS Function End -->

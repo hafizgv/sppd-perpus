@@ -14,17 +14,6 @@
         <section class="h-full flex">
             <?php include '../components/sidebar_p.php' ?>
             <div class="p-6 bg-sky-300 w-screen">
-                <!-- Start Modal -->
-                <div class="bg-black bg-opacity-20 text-center z-50 absolute top-1/2 left-1/2 transform -translate-x-0 -translate-y-1/2">
-                    <div class="p-5">
-                        <h2 class="">Hello</h2>
-                        <div class="p-10 bg-white h-50">
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- End Modal -->
                 <div class="flex items-center mb-7">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 002-2v-6l-3.4-6.9A2 2 0 0016.8 4H7.2a2 2 0 00-1.8 1.1z"/></svg>
                     <h1 class="text-2xl pl-2 font-semibold">Data Laporan Perjalanan Dinas</h1>
@@ -58,7 +47,7 @@
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                                                     </label>
                                                 </form>
-                                                <form action="#" method="post">
+                                                <form action="update.php" method="post">
                                                     <input type="hidden" name="id" value="<?php echo $row['no_spt'] ?>">
                                                     <label class="block editicon bg-yellow-500 p-1 rounded-md cursor-pointer">
                                                         <input type="submit" name="edit"> 
