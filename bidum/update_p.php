@@ -8,7 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../output.css" rel="stylesheet">
-        <title>Bidum</title>
+        <title>Bidum | Update Pegawai</title>
     </head>
     <body>
         <section class="h-full flex">

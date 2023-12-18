@@ -9,11 +9,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../output.css" rel="stylesheet">
-        <title>Pimpinan | SPD</title>
+        <title>Kabid | SPD</title>
     </head>
     <body>
         <section class="h-full flex">
-            <?php include '../components/sidebar_p.php' ?>
+            <?php include '../components/sidebar_k.php' ?>
             <div class="p-6 bg-red-300 w-screen">
                 <div class="flex items-center mb-7">
                     <svg class="md:scale-100 scale-110" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -27,7 +27,7 @@
                             <th>Tugas</th>
                             <th>Tujuan</th>
                             <th class="w-16">Status</th>
-                            <th>Aksi</th>
+                            <th class="w-16">Aksi</th>
                         </tr>
                         <?php 
                             if($query){
@@ -56,20 +56,6 @@
                                                 <a href="download.php?path=../files/<?php echo $row['filename'] ?>" class="block downloadicon bg-blue-500 p-1 rounded-md cursor-pointer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                                                 </a>
-                                                <form action="spd_v.php" method="post">
-                                                    <input type="hidden" name="id" value="<?php echo $row['no_spd'] ?>">
-                                                    <label class="block editicon bg-green-500 p-1 rounded-md cursor-pointer">
-                                                        <input type="submit" name="terima"> 
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>                                                
-                                                    </label>
-                                                </form>
-                                                <form action="spd_v.php" method="post">
-                                                    <input type="hidden" name="id" value="<?php echo $row['no_spd'] ?>">
-                                                    <label class="block deleteicon bg-red-500 p-1 rounded-md cursor-pointer">
-                                                        <input type="submit" name="tidak"> 
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                                                    
-                                                    </label>
-                                                </form>
                                             </div>
                                         </td>
                                     </tr>
