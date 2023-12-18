@@ -11,7 +11,7 @@ $tgl_upload = date("Ymd");
 if (move_uploaded_file($lokasi_file,"$folder")){
   echo "<script>alert('Laporan berhasil diupload!'); window.location = 'spd.php'</script>";
   $query = "INSERT INTO spd (no_spd, petugas, filename, tugas, tujuan, verify)
-            VALUES('$_POST[nospd]','$_POST[nama]','$nama_file', '$_POST[tugas]', '$_POST[tujuan]','0')";
+            VALUES('$_POST[nospd]','$_POST[nama]','$nama_file', '$_POST[tugas]', '$_POST[tujuan]','1')";
 
   mysqli_query($conn, $query);
 }
