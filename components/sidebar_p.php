@@ -1,6 +1,6 @@
 <div class="p-3 space-y-2 md:w-60 w-auto bg-gray-50 shadow-lg dark:bg-gray-900 dark:text-gray-100">
 	<div class="flex flex-col items-center p-2">
-		<img src="https://source.unsplash.com/100x100/?portrait" alt="" class="sm:w-16 w-12 rounded-full dark:bg-gray-500">
+		<img src="../public/pic.jpg" alt="" class="sm:w-16 w-12 rounded-full dark:bg-gray-500">
 		<h2 class="text-lg font-semibold md:block hidden">Pimpinan</h2>
 	</div>
 	<div class="divide-y divide-gray-400 dark:divide-gray-700">

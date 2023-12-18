@@ -88,7 +88,7 @@
                         echo mysqli_num_rows($query);
                     ?></p>
                 </div>
-                <div class="h"></div>
+                <div class="h-[50vh]"></div>
             </div>
         </section>
     </body>
