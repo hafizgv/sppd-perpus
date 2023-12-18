@@ -12,8 +12,10 @@
         session_start();
         $_SESSION['username'] = $username;
         $_SESSION['tier'] = $tier;
-        if($ambil['tier'] == 'pimpinan'){
+        if($ambil['tier'] == 'Pimpinan'){
             header('location:boss/index.php');
+        }else if($ambil['tier'] == 'Bidum'){
+            header('location:bidum/index.php');
         }
     }
     else{

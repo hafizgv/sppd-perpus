@@ -4,17 +4,17 @@
     if(isset($_POST['delete'])){
         $id = $_POST['id'];
 
-        $query = mysqli_query($conn,"DELETE FROM lpd WHERE no_spd='$id'");
+        $query = mysqli_query($conn,"DELETE FROM account WHERE id_user='$id'");
 
         if($query){
             echo "<script>
-            alert('Laporan telah dihapus!');
-            window.location.href='lpd.php';
+            alert('Pegawai telah dihapus!');
+            window.location.href='index.php';
             </script>";
         }else{
             echo "<script>
-            alert('Laporan gagal dihapus!');
-            window.location.href='lpd.php';
+            alert('Pegawai gagal dihapus!');
+            window.location.href='index.php';
             </script>";
         }
     }
