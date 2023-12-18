@@ -16,6 +16,8 @@
             header('location:boss/index.php');
         }else if($ambil['tier'] == 'Bidum'){
             header('location:bidum/index.php');
+        }else if($ambil['tier'] == 'Kabid'){
+            header('location:kabid/index.php');
         }
     }
     else{
