@@ -23,7 +23,7 @@
     else{
         echo 
         "<script type='text/javascript'>
-        alert('maklo gaming!');
+        alert('Gagal Login!');
         window.location.href='index.php';
         </script>";
     }

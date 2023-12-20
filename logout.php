@@ -4,7 +4,7 @@
 
     echo 
         "<script type='text/javascript'>
-        alert('Bye <3!');
+        alert('Berhasil keluar!');
         window.location.href='index.php';
         </script>";
 ?>
