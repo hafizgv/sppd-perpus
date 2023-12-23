@@ -24,10 +24,14 @@
                         <tr class="bg-yellow-300">
                             <th class="p-2">No. SPD</th>
                             <th>Nama</th>
-                            <th>Tugas</th>
-                            <th>Tujuan</th>
+                            <th>Perihal</th>
+                            <th>Lokasi</th>
+                            <th>Tujuan Bidang</th>
+                            <th>Asal Instansi Surat</th>
+                            <th>Tanggal Pelaksanaan</th>
+                            <th>Tanggal Masuk Surat</th>
                             <th class="w-16">Status</th>
-                            <th class="w-16">Aksi</th>
+                            <th>Aksi</th>
                         </tr>
                         <?php 
                             if($query){
@@ -36,8 +40,12 @@
                                     <tr class="text-center">
                                         <td><?php echo $row['no_spd'];?></td>
                                         <td><?php echo $row['petugas'];?></td>
-                                        <td class="break-words"><?php echo $row['tugas'];?></td>
+                                        <td class="break-words"><?php echo $row['perihal'];?></td>
+                                        <td><?php echo $row['lokasi'];?></td>
                                         <td><?php echo $row['tujuan'];?></td>
+                                        <td><?php echo $row['asal'];?></td>
+                                        <td><?php echo "$row[dateIn] - $row[dateOut]";?></td>
+                                        <td><?php echo $row['dateSend'];?></td>
                                         <td>
                                             <div class="flex justify-center">
                                                 <?php

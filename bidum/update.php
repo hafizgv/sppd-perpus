@@ -38,12 +38,30 @@
                                         <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="nama" value="<?php echo $row['petugas'];?>">
                                     </div>
                                     <div class="flex flex-col mb-2">
-                                        <label for="tugas">Tugas</label>
-                                        <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="tugas"><?php echo $row['tugas'];?></textarea>
+                                        <label for="tugas">Perihal</label>
+                                        <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="perihal"><?php echo $row['perihal'];?></textarea>
                                     </div>
                                     <div class="flex flex-col mb-2">
-                                    <label for="nama">Tujuan</label>
+                                        <label for="nama">Lokasi</label>
+                                        <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="lokasi" value="<?php echo $row['lokasi'];?>">
+                                    </div>
+                                    <div class="flex flex-col mb-2">
+                                        <label for="nama">Tujuan Bidang</label>
                                         <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="tujuan" value="<?php echo $row['tujuan'];?>">
+                                    </div>
+                                    <div class="flex flex-col mb-2">
+                                        <label for="nama">Asal Instansi Surat</label>
+                                        <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="asal" value="<?php echo $row['asal'];?>">
+                                    </div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div>
+                                            <label for="nama">Tanggal Mulai</label>
+                                            <input class="rounded-md border-2 border-black p-1 mt-1" type="date" name="dateIn" value="<?php echo $row['dateIn'];?>">
+                                        </div>
+                                        <div>
+                                            <label>Tanggal Selesai</label>
+                                            <input class="rounded-md border-2 border-black p-1 mt-1" type="date" name="dateOut" value="<?php echo $row['dateOut'];?>">
+                                        </div>
                                     </div>
                                     <div class="flex flex-col">
                                         <label for="fileup">Upload File</label>

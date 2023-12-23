@@ -44,21 +44,28 @@
                             <tr class="bg-yellow-300">
                                 <th class="p-2">No. SPD</th>
                                 <th>Nama</th>
-                                <th>Tugas</th>
-                                <th>Tujuan</th>
+                                <th>Perihal</th>
+                                <th>Lokasi</th>
+                                <th>Tujuan Bidang</th>
+                                <th>Asal Instansi Surat</th>
+                                <th>Tanggal Pelaksanaan</th>
+                                <th>Tanggal Masuk Surat</th>
                                 <th class="w-16">Status</th>
                                 <th>Aksi</th>
                             </tr>
                             <?php 
-                                $query = mysqli_query($conn, 'SELECT * FROM spd');
                                 if($query){
                                     while($row = mysqli_fetch_array($query)){
                                         ?>
                                         <tr class="text-center">
                                             <td><?php echo $row['no_spd'];?></td>
                                             <td><?php echo $row['petugas'];?></td>
-                                            <td class="break-words"><?php echo $row['tugas'];?></td>
+                                            <td class="break-words"><?php echo $row['perihal'];?></td>
+                                            <td><?php echo $row['lokasi'];?></td>
                                             <td><?php echo $row['tujuan'];?></td>
+                                            <td><?php echo $row['asal'];?></td>
+                                            <td><?php echo "$row[dateIn] - $row[dateOut]";?></td>
+                                            <td><?php echo $row['dateSend'];?></td>
                                             <td>
                                                 <div class="flex justify-center">
                                                     <?php
@@ -119,12 +126,30 @@
                                 <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="nama" required>
                             </div>
                             <div class="flex flex-col mb-2">
-                                <label for="lapor">Tugas</label>
-                                <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="tugas" required></textarea>
+                                <label for="lapor">Perihal</label>
+                                <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="perihal" required></textarea>
                             </div>
                             <div class="flex flex-col mb-2">
-                                <label for="nama">Tujuan</label>
+                                <label for="nama">Lokasi</label>
+                                <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="lokasi" required>
+                            </div>
+                            <div class="flex flex-col mb-2">
+                                <label for="nama">Tujuan Bidang</label>
                                 <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="tujuan" required>
+                            </div>
+                            <div class="flex flex-col mb-2">
+                                <label for="nama">Asal Instansi Surat</label>
+                                <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="asal" required>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <label for="nama">Tanggal Mulai</label>
+                                    <input class="rounded-md border-2 border-black p-1 mt-1" type="date" name="dateIn" required>
+                                </div>
+                                <div>
+                                    <label>Tanggal Selesai</label>
+                                    <input class="rounded-md border-2 border-black p-1 mt-1" type="date" name="dateOut" required>
+                                </div>
                             </div>
                             <div class="flex flex-col">
                                 <label for="fileup">Upload File</label>

@@ -1,6 +1,5 @@
 <?php
 require '../config/connection.php';
-include 'update_l.php';
 
 $id = $_POST['nospd'] ?? ''; 
 $petugas = $_POST['nama'];
