@@ -25,7 +25,7 @@
                             <th class="p-2">No. SPD</th>
                             <th>Nama</th>
                             <th>Perihal</th>
-                            <th>Lokasi</th>
+                            <th>Lokasi Tujuan</th>
                             <th>Tujuan Bidang</th>
                             <th>Asal Instansi Surat</th>
                             <th>Tanggal Pelaksanaan</th>

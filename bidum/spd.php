@@ -45,7 +45,7 @@
                                 <th class="p-2">No. SPD</th>
                                 <th>Nama</th>
                                 <th>Perihal</th>
-                                <th>Lokasi</th>
+                                <th>Lokasi Tujuan</th>
                                 <th>Tujuan Bidang</th>
                                 <th>Asal Instansi Surat</th>
                                 <th>Tanggal Pelaksanaan</th>
@@ -130,7 +130,7 @@
                                 <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="perihal" required></textarea>
                             </div>
                             <div class="flex flex-col mb-2">
-                                <label for="nama">Lokasi</label>
+                                <label for="nama">Lokasi Tujuan</label>
                                 <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="lokasi" required>
                             </div>
                             <div class="flex flex-col mb-2">

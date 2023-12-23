@@ -42,7 +42,7 @@
                                         <textarea class="rounded-md border-2 border-black p-1 mt-1 resize-none" name="perihal"><?php echo $row['perihal'];?></textarea>
                                     </div>
                                     <div class="flex flex-col mb-2">
-                                        <label for="nama">Lokasi</label>
+                                        <label for="nama">Lokasi Tujuan</label>
                                         <input class="rounded-md border-2 border-black p-1 mt-1" type="text" name="lokasi" value="<?php echo $row['lokasi'];?>">
                                     </div>
                                     <div class="flex flex-col mb-2">
