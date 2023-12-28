@@ -1,4 +1,13 @@
-<div class="flex w-auto justify-between pl-5 divide-x divide-gray-400 bg-gray-50 shadow-lg dark:bg-gray-900 dark:text-gray-100">
+<div class="bg-blue-500 flex justify-center py-5">
+	<div class="flex justify-center text-white px-5">
+		<img class="w-auto h-32" src="../public/dinaslangsa.png" alt="dinaslangsa">
+		<div class="flex flex-col ml-3 text-center pb-3">
+			<span class="text-7xl font-bold">E-SPPD</span>
+			<span class="uppercase">sistem informasi surat perintah perjalanan dinas perpustakaan dan kearsipan kota langsa</span>
+		</div>
+	</div>
+</div>
+<div class="flex w-auto justify-center pl-5 divide-x divide-gray-400 bg-gray-50 shadow-lg dark:bg-gray-900 dark:text-gray-100">
 	<ul class="flex items-center text-sm">
 		<li class="">
 			<a rel="noopener noreferrer" href="index.php" class="hover:bg-yellow-300 flex flex-col items-center p-2">

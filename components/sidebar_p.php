@@ -1,4 +1,13 @@
-<div class="flex w-auto justify-between pl-5 divide-x divide-gray-400 bg-gray-50 shadow-lg dark:bg-gray-900 dark:text-gray-100">
+<div class="bg-blue-500 flex justify-center py-5">
+	<div class="flex justify-center text-white px-5">
+		<img class="w-auto h-32" src="../public/dinaslangsa.png" alt="dinaslangsa">
+		<div class="flex flex-col ml-3 text-center pb-3">
+			<span class="text-7xl font-bold">E-SPPD</span>
+			<span class="uppercase">sistem informasi surat perintah perjalanan dinas perpustakaan dan kearsipan kota langsa</span>
+		</div>
+	</div>
+</div>
+<div class="flex w-auto justify-center pl-5 divide-x divide-gray-400 bg-gray-50 shadow-lg dark:bg-gray-900 dark:text-gray-100">
 	<ul class="flex items-center text-sm">
 		<li>
 			<a rel="noopener noreferrer" href="index.php"class="hover:bg-yellow-300 flex flex-col items-center p-2 cursor-pointer">
@@ -16,7 +25,7 @@
 	<ul class="flex text-sm items-center">
 		<div class="flex flex-col items-center p-2">
 			<img src="../public/pic.jpg" alt="" class="w-5 rounded-full dark:bg-gray-500">
-			<h2 class="md:block hidden">Kepala Bidang</h2>
+			<h2 class="md:block hidden">Pemimpin</h2>
 		</div>
 		<li>
 			<a rel="noopener noreferrer" href="../logout.php" class="hover:bg-red-600/50 hover:text-white flex flex-col items-center p-2">
